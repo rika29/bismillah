@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="home" style="background-image: url('images/How-to-Make-a-Cupcake-Bouquet1.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+            <div data-role="header" data-theme="a">
+                <h1>TUGAS 2</h1>
+            </div>
+            <div data-role="content"></div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Mobile Programing</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-icon="home" data-theme="b">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#menu" data-icon="menu" data-theme="b">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#info" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="menu" data-theme="e">
+            <div data-role="content">
+                <h2>Mendeskripsikan tentang Multimedia</h2>
+                <em>Multimedia Building Blocks</em>
+                <ul data-role="listview" data-inset="true">
+                    <li data-theme="d">Graphic</li>
+                    <li data-theme="d">Teks</li>
+                    <li data-theme="d">Audio</li>
+                    <li data-theme="d">Video</li>
+                    <li data-theme="d">Animasi</li>
+                </ul>
+                <a data-role="button" href="#graphic" data-theme="b">Lets Play</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Footer</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-icon="home" data-theme="b">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#menu" data-icon="menu" data-theme="b">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#info" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="dialog" id="info" data-theme="a">
+            <div data-role="header">
+                <h1>About Me</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/DSC_1659.JPG" width="250" height="300">
+                <h3>RIKA ARSITA</h3>
+                <span>1111033 - TI 32</span>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>== ^,^ ==</h1>
+            </div>
+        </div>
+        <div data-role="page" id="graphic" data-theme="e">
+            <div data-role="header" data-theme="b">
+                <h1>Graphic</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/51A8NaFMkhL.jpg" width="125" height="150">
+                <img src="images/CF_EiffelTowerPattern.jpg" width="125" height="150">
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Graphic</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#infographic" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#teks" data-icon="arrow-r" data-theme="b">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="teks" data-theme="e">
+            <div data-role="header" data-theme="b">
+                <h1>Teks</h1>
+            </div>
+            <div data-role="content">
+                <h1>Ini adalah multimedia teks</h1>
+                <h2>Ini adalah multimedia teks</h2>
+                <h3>Ini adalah multimedia teks</h3>
+                <h4>Ini adalah multimedia teks</h4>
+                <h5>Ini adalah multimedia teks</h5>
+                <h6>Ini adalah multimedia teks</h6>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Teks</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#graphic" data-icon="arrow-l" data-theme="b">Previous</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#infoteks" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#video" data-icon="arrow-r" data-theme="b">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="video" data-theme="e">
+            <div data-role="header" data-theme="b">
+                <h1>Video</h1>
+            </div>
+            <div data-role="content">
+			
+			<video width="320" height="220" controls>
+			<source src="video/movie.mp4" type="video/mp4">
+			</video>
+			
+			</div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Video</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#teks" data-icon="arrow-l" data-theme="b">Previous</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#infovideo" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#audio" data-icon="arrow-r" data-theme="b">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="audio" data-theme="e">
+            <div data-role="header" data-theme="b">
+                <h1>Audio</h1>
+            </div>
+            <div data-role="content">
+			
+			<audio width="320" height="220" controls>
+			  <source src="audio/let.mp3" type="audio/mpeg">
+			</audio>
+			
+			</div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Audio</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#video" data-icon="arrow-l" data-theme="b">Previous</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#infoaudio" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#animasi" data-icon="arrow-r" data-theme="b">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="animasi" data-theme="e">
+            <div data-role="header" data-theme="b">
+                <h1>Animasi</h1>
+            </div>
+            <div data-role="content">
+			<img src="images/aa.gif" width="125" height="150">
+			</div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Animasi</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#audio" data-icon="arrow-l" data-theme="b">Previous</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#infoanimasi" data-icon="info" data-theme="b">Info</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#home" data-icon="home" data-theme="b">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="dialog" id="infographic" data-theme="b">
+            <div data-role="header">
+                <h1>Info Graphic</h1>
+            </div>
+            <div data-role="content">
+                <strong>Grafik terdiri dari gambar diam dan gambar bergerak. Contoh dari gambar diam yaitu
+                    foto, gambar digital, lukisan, dan poster. Gambar diam biasa diukur berdasarkan size
+                    (sering disebut juga canvas size) dan resolusi. Contoh dari gambar bergerak adalah
+                    animasi, video dan film. Selain bisa diukur dengan menggunakan size dan resolusi,
+                    gambar bergerak juga memiliki durasi.</strong>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Multimedia Graphic</h1>
+            </div>
+        </div>
+        <div data-role="dialog" id="infoteks" data-theme="b">
+            <div data-role="header">
+                <h1>Info Teks</h1>
+            </div>
+            <div data-role="content">
+                <strong>Teks adalah simbol berupa medium visual yang digunakan untuk menjelaskan bahasa
+                    lisan. Teks memiliki berbagai macam jenis bentuk atau tipe (sebagai contoh: Time
+                    New Roman, Arial, Comic San MS), ukuran dan wana. Satuan dari ukuran suatu teks terdiri
+                    dari length dan size. Length biasanya menyatakan banyaknya teks dalam sebuah kata
+                    atau halaman. Size menyatakan ukuran besar atau kecil suatu huruf. Standar teks memiliki
+                    size 10 atau 12 poin. Semakin besar size suatu huruf maka semakin tampak besar ukuran
+                    huruf tersebut.</strong>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Multimedia Teks</h1>
+            </div>
+        </div>
+        <div data-role="dialog" id="infovideo" data-theme="b">
+            <div data-role="header">
+                <h1>Multimedia Video</h1>
+            </div>
+            <div data-role="content">
+                <strong>Video menyediakan sumber yang kaya dan hidup untuk aplikasi multimedia. Dengan video
+                    dapat menerangkan hal-hal yang sulit digambarkan lewat kata-kata atau gambar diam
+                    dan dapat menggambarkan emosi dan psikologi manusia secara lebih jelas.</strong>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Multimedia Video</h1>
+            </div>
+        </div>
+        <div data-role="dialog" id="infoaudio" data-theme="b">
+            <div data-role="header">
+                <h1>Info Audio</h1>
+            </div>
+            <div data-role="content">
+                <strong>Multimedia tidak akan lengkap jika tanpa audio (suara). Audio bisa berupa percakapan,
+                    musik atau efek suara. Format dasar audio terdiri dari beberapa jenis, yaitu WAVE
+                    dan MIDI.</strong>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Multimedia Audio</h1>
+            </div>
+        </div>
+        <div data-role="dialog" id="infoanimasi" data-theme="b">
+            <div data-role="header">
+                <h1>Info Animasi</h1>
+            </div>
+            <div data-role="content">
+                <strong>Animasi adalah simulasi gerakan yang dihasilkan dengan menayangkan rentetan frame
+                    ke layer. Frame adalah satu gambar tunggal pada rentetan gambar yang membentuk animasi.
+                    Animasi mencakup semua yang mengandung efek visual sehingga animasi mencakup perubahan
+                    posisi terhadap waktu, bentuk, warna, struktur, tekstur dari sebuah objek, posisi
+                    kamera, pencahayaan, orientasi dan focus dan perubahan dalam teknik rendering.</strong>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Multimedia Animasi</h1>
+            </div>
+        </div>
+    </body>
+
+</html>
